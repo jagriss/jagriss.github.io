@@ -1,0 +1,37 @@
+html,
+body {
+  /* margin: 0;
+  padding: 0; */
+  background-color: blanchedalmond;
+}
+
+/* .container {
+    position: absolute;
+} */
+
+.title {
+    font-family: 'Monoton', cursive;
+    font-size: 300px;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    bottom: 30%;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* .name {
+    position: absolute;
+}
+
+.links {
+    position: relative;
+} */
+
