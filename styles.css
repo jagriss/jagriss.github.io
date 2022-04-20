@@ -1,6 +1,7 @@
 html,
 body {
   background-color: blanchedalmond;
+  margin: auto;
 }
 
 @media only screen and (max-width: 600px){
@@ -11,7 +12,7 @@ body {
 
 .title {
     font-family: 'Monoton', cursive;
-    font-size: 300px;
+    font-size: 400px;
     position: fixed;
     width: 100%;
     display: inline-block;
@@ -20,7 +21,7 @@ body {
 
 #footer {
     position: fixed;
-    bottom: 20%;
+    bottom: 10%;
     width: 100%;
     display: inline-block;
     text-align: center;
