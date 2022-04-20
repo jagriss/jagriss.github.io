@@ -1,13 +1,7 @@
 html,
 body {
-  /* margin: 0;
-  padding: 0; */
   background-color: blanchedalmond;
 }
-
-/* .container {
-    position: absolute;
-} */
 
 .title {
     font-family: 'Monoton', cursive;
@@ -20,18 +14,9 @@ body {
 
 #footer {
     position: fixed;
-    bottom: 30%;
+    bottom: 20%;
     width: 100%;
     display: inline-block;
     text-align: center;
+    font-family: 'Lekton', sans-serif;
 }
-
-
-/* .name {
-    position: absolute;
-}
-
-.links {
-    position: relative;
-} */
-
