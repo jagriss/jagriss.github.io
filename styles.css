@@ -7,7 +7,7 @@ body {
 .title {
     font-family: 'Monoton', cursive;
     font-size: 30vw;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -15,10 +15,11 @@ body {
 }
 
 #footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 10%;
     width: 100%;
     display: inline-block;
     text-align: center;
+    margin: 25px;
     font-family: 'Lekton', sans-serif;
 }
