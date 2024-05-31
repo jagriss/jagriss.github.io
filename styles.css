@@ -1,25 +1,66 @@
 html,
 body {
-  background-color: blanchedalmond;
+  background-color: #FFFDE4;
   margin: auto;
 }
 
 .title {
     font-family: 'Monoton', cursive;
     font-size: 30vw;
-    /* position: fixed; */
     width: 100%;
     display: inline-block;
     text-align: center;
 
 }
 
-#footer {
+.flashing-text {
+  font-size: 20vw;
+  width: 100%;
+  text-align: center;
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  position: sticky;
+  top: 0;
+  height: 75vh;
+  overflow-y: auto;
+}
+
+#subhead {
+  font-family:  "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* font-size: 15vw; */
+  width: 100%;
+  /* display: inline-block; */
+  text-align: center;
+  /* height: 100vh;
+  overflow-y: auto; */
+}
+
+#info {
+  /* position: fixed;
+  /* bottom: 10%;
+  width: 100%;
+  display: inline-block;
+  text-align: center; */
+  /* margin: 25px; */
+  font-family: "Comfortaa", sans-serif;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* #footer {
     /* position: fixed; */
-    bottom: 10%;
+    /* bottom: 10%;
     width: 100%;
     display: inline-block;
     text-align: center;
     margin: 25px;
     font-family: 'Lekton', sans-serif;
-}
+} */
