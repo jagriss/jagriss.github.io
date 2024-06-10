@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: #FFFDE4;
+  background-color: #F6F6FF;
   margin: auto;
 }
 
@@ -13,8 +13,15 @@ body {
 
 }
 
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
 .flashing-text {
-  font-size: 20vw;
+  font-size: 25vw;
   width: 100%;
   text-align: center;
   font-family: "Ultra", serif;
@@ -29,38 +36,70 @@ body {
   top: 0;
   height: 75vh;
   overflow-y: auto;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flashing-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+}
+
+#flashingImage, #flashingImage2, #flashingImage3 {
+  position: relative;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baseImg, .baseImg2, .baseImg3, .stacked-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  /* transform: rotate(-5deg); */
+  transition: transform 0.5s;
+}
+
+.stacked-image:nth-child(even) {
+  transform: rotate(2.5deg);
+}
+
+#nav {
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: black;
 }
 
 #subhead {
-  font-family:  "Comfortaa", sans-serif;
+  font-family: "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
-  /* font-size: 15vw; */
   width: 100%;
-  /* display: inline-block; */
   text-align: center;
-  /* height: 100vh;
-  overflow-y: auto; */
 }
 
 #info {
-  /* position: fixed;
-  /* bottom: 10%;
-  width: 100%;
-  display: inline-block;
-  text-align: center; */
-  /* margin: 25px; */
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Orelega One", serif;
   height: 100vh;
   overflow-y: auto;
 }
 
-/* #footer {
-    /* position: fixed; */
-    /* bottom: 10%;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    margin: 25px;
-    font-family: 'Lekton', sans-serif;
-} */
+#proj {
+  font-family: "Smokum", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 30vw;
+  width: 100%;
+}
