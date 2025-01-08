@@ -29,13 +29,8 @@ window.onload = function() {
 
     let portCurrentIndex = 0;
 
-    // function getRandomRotation() {
-    //     return Math.random() * 20 - 10; // Random rotation between -10 and 10 degrees
-    // }
-
     function stackImages() {
         // Clear previous images to avoid infinite stacking
-        // portfolioElement.innerHTML = '';
         while (portfolioElement.childNodes.length > 1) {
             portfolioElement.removeChild(portfolioElement.lastChild);
         }
@@ -46,8 +41,6 @@ window.onload = function() {
             imgElement.className = 'stacked-image';
             imgElement.style.zIndex = i + 1;
             imgElement.style.position = 'absolute';
-            // imgElement.style.transform = `rotate(${getRandomRotation()}deg) translate(${i * 10}px, ${i * 10}px)`;
-            // imgElement.style.transform = `rotate(${portCurrentIndex % 2 === 0 ? -5 : 5}deg) translate(${portCurrentIndex * 10}px, ${portCurrentIndex * 10}px)`;
             portfolioElement.appendChild(imgElement);
         }
 
@@ -164,3 +157,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for scroll
     scrollingColumn.addEventListener('scroll', checkScroll);
 });
+
