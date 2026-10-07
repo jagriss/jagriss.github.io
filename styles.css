@@ -4,22 +4,6 @@ body {
   margin: auto;
 }
 
-.title {
-  font-family: 'Monoton', cursive;
-  font-size: 30vw;
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-
-}
-
-.container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-}
-
 .flashing-text {
   font-size: 25vw;
   width: 100%;
@@ -39,15 +23,6 @@ body {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.flashing-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 150vh;
-  background-size: cover;
-}
-
 #flashingImage, #flashingImage2, #flashingImage3 {
   position: relative;
   width: 75%;
@@ -57,13 +32,12 @@ body {
   align-items: center;
 }
 
-.baseImg, .baseImg2, .baseImg3, .stacked-image {
+.baseImg, .stacked-image {
   position: absolute;
   width: 100%;
   height: auto;
   top: 0;
   left: 0;
-  /* transform: rotate(-5deg); */
   transition: transform 0.5s;
 }
 
@@ -71,7 +45,7 @@ body {
   transform: rotate(2.5deg);
 }
 
-#nav {
+.nav-col {
   font-family: "Orelega One", serif;
   font-weight: 400;
   font-style: normal;
@@ -87,7 +61,7 @@ body {
   text-align: center;
 }
 
-#info {
+.info {
   font-family: "Orelega One", serif;
   height: 100vh;
   overflow-y: auto;
@@ -105,7 +79,6 @@ body {
 
 #infoPage {
   font-family: "Orelega One", serif;
-  /* text-shadow: 0 0 5px #FBFFFF, 0 0 10px #FBFFFF, 0 0 20px #FBFFFF, 0 0 40px #FBFFFF; */
   width: 100%;
   color: #e06b88;
   text-align: center;
@@ -113,13 +86,54 @@ body {
 }
 
 .infoContainer {
-  /* margin-top: 50px; */
   text-align: center;
-  /* padding: 10px; */
   font-family: "Orelega One", serif;
 }
 
 .content {
   border: 2px solid #090004;
   padding: 10px;
+}
+
+.neon-button {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #e06b88;
+  border-radius: 2rem;
+  color: #e06b88;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.neon-button:hover,
+.neon-button:focus-visible {
+  background-color: #e06b88;
+  color: #F6F6FF;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 3rem;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee span {
+    padding-left: 0;
+    animation: none;
+  }
 }

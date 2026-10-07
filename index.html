@@ -4,70 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Almendra&family=Danfo&family=Eater&family=Ewert&family=Fontdiner+Swanky&family=Imbue:opsz,wght@10..100,100..900&family=Libre+Barcode+128+Text&family=Orbitron:wght@400..900&family=Orelega+One&family=Rye&family=Silkscreen:wght@700&family=Smokum&family=Ultra&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>jace</title>
+    <meta name="description" content="Jace Grissom — data engineer. New site under construction.">
+    <title>Jace Grissom</title>
+    <style>
+        :root {
+            --bg: #F6F6FF;
+            --text: #16161d;
+            --muted: #5c5c6b;
+            --accent: #e06b88;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #121218;
+                --text: #ececf3;
+                --muted: #a0a0b0;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px 16px;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 0.25rem;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            margin: 0 0 2rem;
+            color: var(--muted);
+            font-size: 1.125rem;
+        }
+
+        .status {
+            display: inline-block;
+            margin-bottom: 2rem;
+            padding: 0.35rem 0.9rem;
+            border: 1px solid var(--accent);
+            border-radius: 999px;
+            color: var(--accent);
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            padding: 0.6rem 1.4rem;
+            border-radius: 8px;
+            background: var(--text);
+            color: var(--bg);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .links a:hover,
+        .links a:focus-visible {
+            background: var(--accent);
+            color: #fff;
+        }
+    </style>
 </head>
 
-<body class="body">
-    <div class="container-fluid">
-        <div class="row p-5">
-            <div class="align-text-center my-5">
-                <div class="flashing-text" id="flashingText">jace</div>
-                <div class="align-text-center my-1" id="subhead">
-                    Data by trade | Web by choice
-                </div>
-            </div>
-        </div>
-        <div class="row p-5">
-            <div class="col-6" id="nav">
-                <div id="homeText">
-                    <a class="btn btn-light link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-1"
-                        data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                        aria-controls="collapseExample">
-                        Info
-                    </a>
-                </div>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        <div class="row fs-3">
-                            Languages: Python, SQL, Bash, Java, JavaScript
-                        </div>
-                        <div class="row fs-3">
-                            Databases, Tools, Tech: MySQL, PostgreSQL, Docker, dbt, Git, GCP, Snowflake, Jenkins,
-                            Pandas, NumPy, Jupyter Notebook
-                        </div>
-                        <div class="row fs-3">
-                            <a href="https://github.com/jagriss" target="_blank" rel="noopener noreferrer">
-                                GitHub
-                            </a>
-                        </div>
-                        <div class="row fs-3">
-                            <a href="https://www.linkedin.com/in/jacegrissom/" target="_blank" rel="noopener noreferrer">
-                                Linkedin
-                            </a>        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="col-6" id="nav">
-            <div id="homeText2">
-                <a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-1"
-                    href="pages/portfolio.html"> Portfolio
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
-
+<body>
+    <main>
+        <h1>Jace Grissom</h1>
+        <p class="tagline">Data Engineer · dbt · Snowflake · Terraform · GCP </p>
+        <div class="status">Site under construction</div>
+        <nav class="links" aria-label="Profiles">
+            <a href="https://github.com/jagriss" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/jacegrissom/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+    </main>
 </body>
 
 </html>
